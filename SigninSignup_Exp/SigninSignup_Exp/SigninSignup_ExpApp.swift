@@ -7,14 +7,16 @@
 
 import SwiftUI
 import Firebase
+//import FirebaseCore
 
 @main
 struct SigninSignup_ExpApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     var body: some Scene {
+        var viewModel: ViewModel = ViewModel()
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(viewModel)
         }
     }
 }
