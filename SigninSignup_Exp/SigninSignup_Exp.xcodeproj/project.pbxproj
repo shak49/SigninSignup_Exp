@@ -11,6 +11,7 @@
 		6D60DF9E2740616E00751572 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D60DF9D2740616E00751572 /* ContentView.swift */; };
 		6D60DFA02740617100751572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D60DF9F2740617100751572 /* Assets.xcassets */; };
 		6D60DFA32740617100751572 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D60DFA22740617100751572 /* Preview Assets.xcassets */; };
+		6D60DFAA27406FE400751572 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D60DFA927406FE400751572 /* GoogleService-Info.plist */; };
 		9FD297D9D8DB4F118A298AD8 /* Pods_SigninSignup_Exp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E92219154F7CA17A940824 /* Pods_SigninSignup_Exp.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +23,7 @@
 		6D60DF9D2740616E00751572 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6D60DF9F2740617100751572 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D60DFA22740617100751572 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6D60DFA927406FE400751572 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F434334F40E91EB787A09579 /* Pods-SigninSignup_Exp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SigninSignup_Exp.debug.xcconfig"; path = "Target Support Files/Pods-SigninSignup_Exp/Pods-SigninSignup_Exp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +68,7 @@
 		6D60DF9A2740616E00751572 /* SigninSignup_Exp */ = {
 			isa = PBXGroup;
 			children = (
+				6D60DFA927406FE400751572 /* GoogleService-Info.plist */,
 				6D60DF9B2740616E00751572 /* SigninSignup_ExpApp.swift */,
 				6D60DF9D2740616E00751572 /* ContentView.swift */,
 				6D60DF9F2740617100751572 /* Assets.xcassets */,
@@ -88,7 +91,6 @@
 				F434334F40E91EB787A09579 /* Pods-SigninSignup_Exp.debug.xcconfig */,
 				4230BB6DCA7CEA73840909B5 /* Pods-SigninSignup_Exp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -153,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D60DFA32740617100751572 /* Preview Assets.xcassets in Resources */,
+				6D60DFAA27406FE400751572 /* GoogleService-Info.plist in Resources */,
 				6D60DFA02740617100751572 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
