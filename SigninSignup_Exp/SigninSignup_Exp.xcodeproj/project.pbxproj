@@ -11,14 +11,18 @@
 		6D60DF9E2740616E00751572 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D60DF9D2740616E00751572 /* ContentView.swift */; };
 		6D60DFA02740617100751572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D60DF9F2740617100751572 /* Assets.xcassets */; };
 		6D60DFA32740617100751572 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D60DFA22740617100751572 /* Preview Assets.xcassets */; };
+		9FD297D9D8DB4F118A298AD8 /* Pods_SigninSignup_Exp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E92219154F7CA17A940824 /* Pods_SigninSignup_Exp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4230BB6DCA7CEA73840909B5 /* Pods-SigninSignup_Exp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SigninSignup_Exp.release.xcconfig"; path = "Target Support Files/Pods-SigninSignup_Exp/Pods-SigninSignup_Exp.release.xcconfig"; sourceTree = "<group>"; };
+		61E92219154F7CA17A940824 /* Pods_SigninSignup_Exp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SigninSignup_Exp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D60DF982740616E00751572 /* SigninSignup_Exp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SigninSignup_Exp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D60DF9B2740616E00751572 /* SigninSignup_ExpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninSignup_ExpApp.swift; sourceTree = "<group>"; };
 		6D60DF9D2740616E00751572 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6D60DF9F2740617100751572 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D60DFA22740617100751572 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F434334F40E91EB787A09579 /* Pods-SigninSignup_Exp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SigninSignup_Exp.debug.xcconfig"; path = "Target Support Files/Pods-SigninSignup_Exp/Pods-SigninSignup_Exp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +30,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FD297D9D8DB4F118A298AD8 /* Pods_SigninSignup_Exp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38D58598DCB7C2EFB5E8F247 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61E92219154F7CA17A940824 /* Pods_SigninSignup_Exp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6D60DF8F2740616E00751572 = {
 			isa = PBXGroup;
 			children = (
 				6D60DF9A2740616E00751572 /* SigninSignup_Exp */,
 				6D60DF992740616E00751572 /* Products */,
+				E0D8AA871ACE28CAE2E10B04 /* Pods */,
+				38D58598DCB7C2EFB5E8F247 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E0D8AA871ACE28CAE2E10B04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F434334F40E91EB787A09579 /* Pods-SigninSignup_Exp.debug.xcconfig */,
+				4230BB6DCA7CEA73840909B5 /* Pods-SigninSignup_Exp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D60DFA62740617100751572 /* Build configuration list for PBXNativeTarget "SigninSignup_Exp" */;
 			buildPhases = (
+				7610F1C7B7975BE2E6A7D1BC /* [CP] Check Pods Manifest.lock */,
 				6D60DF942740616E00751572 /* Sources */,
 				6D60DF952740616E00751572 /* Frameworks */,
 				6D60DF962740616E00751572 /* Resources */,
+				9C0BA1D893EB0347EDCD10D0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7610F1C7B7975BE2E6A7D1BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SigninSignup_Exp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C0BA1D893EB0347EDCD10D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SigninSignup_Exp/Pods-SigninSignup_Exp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SigninSignup_Exp/Pods-SigninSignup_Exp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SigninSignup_Exp/Pods-SigninSignup_Exp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6D60DF942740616E00751572 /* Sources */ = {
@@ -263,6 +332,7 @@
 		};
 		6D60DFA72740617100751572 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F434334F40E91EB787A09579 /* Pods-SigninSignup_Exp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,6 +362,7 @@
 		};
 		6D60DFA82740617100751572 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4230BB6DCA7CEA73840909B5 /* Pods-SigninSignup_Exp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

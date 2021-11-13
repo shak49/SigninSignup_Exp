@@ -29,8 +29,12 @@ struct ContentView: View {
                         
                     } label: {
                         Text("Sign In")
+                            .frame(width: 200, height: 50)
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
                     }
-
+                    .padding()
                 }
                 .padding()
                 Spacer()
