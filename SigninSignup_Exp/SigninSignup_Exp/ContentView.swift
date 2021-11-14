@@ -70,6 +70,32 @@ struct SigninView: View {
                         .cornerRadius(10)
                 }
                 .padding()
+                HStack {
+                    Button {
+                        
+                    } label: {
+                        Image("google")
+                            .resizable()
+                    }
+                    .frame(width: 40, height: 40)
+                .padding()
+                    Button {
+                        
+                    } label: {
+                        Image("apple")
+                            .resizable()
+                    }
+                    .frame(width: 50, height: 50)
+                .padding()
+                    Button {
+                        
+                    } label: {
+                        Image("facebook")
+                            .resizable()
+                    }
+                    .frame(width: 42, height: 42)
+                .padding()
+                }
                 NavigationLink("Create Account", destination: SignupView())
                 .padding()
             }
