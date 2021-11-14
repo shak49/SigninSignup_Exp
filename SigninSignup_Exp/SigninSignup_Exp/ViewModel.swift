@@ -19,7 +19,7 @@ class ViewModel: ObservableObject {
     
     // SHAK: Functions
     func signin(email: String, password: String) {
-        auth.signIn(withEmail: email, password: password) { [weak self] result, error in
+        auth.signIn(withEmail: email, password: password) { [weak self] (result, error) in
             guard result != nil, error == nil else { return }
             DispatchQueue.main.async {
                 self?.signedin = true
@@ -27,12 +27,17 @@ class ViewModel: ObservableObject {
         }
     }
     
-    func singup(email: String, password: String) {
-        auth.createUser(withEmail: email, password: password) { [weak self] result, error in
+    func signup(email: String, password: String) {
+        auth.createUser(withEmail: email, password: password) { [weak self] (result, error) in
             guard result != nil, error == nil else { return }
             DispatchQueue.main.async {
-                self?.signedin = false
+                self?.signedin = true
             }
         }
+    }
+    
+    func signout() {
+        try? auth.signOut()
+        self.signedin = false
     }
 }

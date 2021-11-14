@@ -14,7 +14,18 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             if viewModel.signedin {
-                Text("You're signed in!")
+                VStack {
+                    Text("You're signed in!")
+                    Button {
+                        viewModel.signout()
+                    } label: {
+                        Text("Sign Out")
+                            .frame(width: 200, height: 50)
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                    }
+                }
             } else {
                 SigninView()
             }
@@ -40,9 +51,13 @@ struct SigninView: View {
             VStack {
                 TextField("Enter an email...", text: $email)
                     .padding()
+                    .disableAutocorrection(true)
+                    .autocapitalization(.none)
                     .background(Color(.secondarySystemBackground))
                 SecureField("Enter a password...", text: $password)
                     .padding()
+                    .disableAutocorrection(true)
+                    .autocapitalization(.none)
                     .background(Color(.secondarySystemBackground))
                 Button {
                     guard !email.isEmpty, !password.isEmpty else { return }
@@ -54,6 +69,8 @@ struct SigninView: View {
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }
+                .padding()
+                NavigationLink("Create Account", destination: SignupView())
                 .padding()
             }
             .padding()
@@ -77,15 +94,19 @@ struct SignupView: View {
             VStack {
                 TextField("Enter an email...", text: $email)
                     .padding()
+                    .disableAutocorrection(true)
+                    .autocapitalization(.none)
                     .background(Color(.secondarySystemBackground))
                 SecureField("Enter a password...", text: $password)
                     .padding()
+                    .disableAutocorrection(true)
+                    .autocapitalization(.none)
                     .background(Color(.secondarySystemBackground))
                 Button {
                     guard !email.isEmpty, !password.isEmpty else { return }
-                    viewModel.signin(email: email, password: password)
+                    viewModel.signup(email: email, password: password)
                 } label: {
-                    Text("Sign In")
+                    Text("Create")
                         .frame(width: 200, height: 50)
                         .background(Color.blue)
                         .foregroundColor(.white)
@@ -96,7 +117,7 @@ struct SignupView: View {
             .padding()
             Spacer()
         }
-        .navigationTitle(Text("Sign In"))
+        .navigationTitle(Text("Sign up"))
     }
 }
 
