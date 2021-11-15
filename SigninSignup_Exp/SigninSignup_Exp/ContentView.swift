@@ -72,7 +72,7 @@ struct SigninView: View {
                 .padding()
                 HStack {
                     Button {
-                        
+                        // Google authentication
                     } label: {
                         Image("google")
                             .resizable()
@@ -80,7 +80,7 @@ struct SigninView: View {
                     .frame(width: 40, height: 40)
                 .padding()
                     Button {
-                        
+                        // Apple authentication
                     } label: {
                         Image("apple")
                             .resizable()
@@ -88,7 +88,7 @@ struct SigninView: View {
                     .frame(width: 50, height: 50)
                 .padding()
                     Button {
-                        
+                        // Facebook authentication
                     } label: {
                         Image("facebook")
                             .resizable()
